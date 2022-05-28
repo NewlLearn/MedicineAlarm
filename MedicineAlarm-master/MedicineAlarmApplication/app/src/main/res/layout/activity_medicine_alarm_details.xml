@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#ffffff"
+    tools:context=".view.MedicineAlarmDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/alarm_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/clock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAlarmTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:layout_editor_absoluteX="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_white_curve_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAlarmTime">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dp"
+                    android:paddingVertical="5dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/txtDetailsM"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="M"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsT"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="T"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsW"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="W"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsTh"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="T"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsF"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="F"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsS"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="S"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/txtDetailsSu"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_circle_gray"
+                        android:text="S"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_black"
+                        android:textStyle="bold"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginStart="3dp"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingEnd="20dp"
+                        android:text="MEDICINE/S:"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtMedicineName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingEnd="20dp"
+                        android:text="TOTAL MEDICINE/S LEFT:"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtTotalMed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingEnd="20dp"
+                        android:text="MAXIMUM:"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtMedMax"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:layout_marginTop="30dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingEnd="20dp"
+                        android:text="MINIMUM:"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/txtMedMin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        />
+
+                </TableRow>
+
+
+                <Button
+                    android:id="@+id/btnTakeMedicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Take Medicine"
+                    android:paddingHorizontal="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_curve_gray"/>
+
+                <TextView
+                    android:id="@+id/txtRefill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="center_horizontal"
+                    android:text="+ Refill Medicine"
+                    android:textColor="#000000"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="50dp"
+                    />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
